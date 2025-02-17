@@ -16,33 +16,33 @@
           The Caesar Cipher is a simple and well-known encryption technique
           named after Julius Caesar, who used it for secure communication. It
           works by shifting each letter in the original message a fixed number
-          of places down or up the alphabet. <br />
+          of places down or up the alphabet. <br /><br />
           Shift Value: if Caesar Cipher's rule Each letter in the message is
           shifted by a random value between 1 and 25. For example, with a shift
           of 3, 'A' becomes 'D', 'B' becomes 'E', and so on. But to make things
           more unique This one is you are going to shift BACKWARDS.
-          <br />Letter Wrapping: If the shift causes a letter to go past 'Z', it
-          wraps around to the beginning of the alphabet (e.g., 'Z' shifted by 1
-          becomes 'A'). Uppercase Conversion: The input message is converted to
-          uppercase before encryption for consistency.
+          <br /><br />Letter Wrapping: If the shift causes a letter to go past
+          'Z', it wraps around to the beginning of the alphabet (e.g., 'Z'
+          shifted by 1 becomes 'A'). Uppercase Conversion: The input message is
+          converted to uppercase before encryption for consistency.
         </h3>
         <br />
         <br />
-        <input type="text" id="messageInput" placeholder="" />
+        <input type="text" id="messageInput" placeholder="Click me!" />
         <button onclick="encryptMessage()">Encrypt</button>
       </div>
 
       <div class="message-box">
         <h3>Encrypted Message:</h3>
-        <p id="encryptedDisplay">Your encrypted message will appear here...</p>
+        <p id="encryptedDisplay">_______________</p>
+        <p></p>
       </div>
 
       <div class="hint" id="mainHint"></div>
 
       <div>
-        <h3>Try to Decrypt:</h3>
-        <input type="text" id="decryptAttempt" placeholder="Enter your guess" />
-        <button onclick="checkDecryption()">Check Answer</button>
+        <input type="text" id="decryptAttempt" placeholder="Click me!" />
+        <button onclick="checkDecryption()">Decrypt</button>
       </div>
 
       <p id="result"></p>
@@ -55,9 +55,9 @@
             alphabet
           </li>
           <li>Z wraps around to A in this magical alphabet dance</li>
-          <li>Try writing out the alphabet and counting spaces!</li>
         </ul>
       </div>
+      <h4>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</h4>
     </div>
 
     <script src="scripts.js"></script>
