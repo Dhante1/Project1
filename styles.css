@@ -34,11 +34,11 @@ body {
   font-style: italic;
   margin: 1rem 0;
   padding: 0.5rem;
-  border-left: 4px solid #ffd700;
+  border-left: 4px solid black;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #6587ea;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #4462bc;
 }
 
 input {
@@ -101,6 +101,7 @@ input {
 #intro1 {
   padding: 1rem;
   border-left: 4px solid black;
+  background-color: #f8f9fa;
 }
 
 #ques {
