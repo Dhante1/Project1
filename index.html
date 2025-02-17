@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptography Puzzle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Cryptography Puzzle</h1>
+      <hr />
+      <div>
+        <h3 id="ques">What is "Caesar Cipher?"</h3>
+        <h3 id="intro1">
+          The Caesar Cipher is a simple and well-known encryption technique
+          named after Julius Caesar, who used it for secure communication. It
+          works by shifting each letter in the original message a fixed number
+          of places down or up the alphabet. <br />
+          Shift Value: if Caesar Cipher's rule Each letter in the message is
+          shifted by a random value between 1 and 25. For example, with a shift
+          of 3, 'A' becomes 'D', 'B' becomes 'E', and so on. But to make things
+          more unique This one is you are going to shift BACKWARDS.
+          <br />Letter Wrapping: If the shift causes a letter to go past 'Z', it
+          wraps around to the beginning of the alphabet (e.g., 'Z' shifted by 1
+          becomes 'A'). Uppercase Conversion: The input message is converted to
+          uppercase before encryption for consistency.
+        </h3>
+        <br />
+        <br />
+        <input type="text" id="messageInput" placeholder="" />
+        <button onclick="encryptMessage()">Encrypt</button>
+      </div>
+
+      <div class="message-box">
+        <h3>Encrypted Message:</h3>
+        <p id="encryptedDisplay">Your encrypted message will appear here...</p>
+      </div>
+
+      <div class="hint" id="mainHint"></div>
+
+      <div>
+        <h3>Try to Decrypt:</h3>
+        <input type="text" id="decryptAttempt" placeholder="Enter your guess" />
+        <button onclick="checkDecryption()">Check Answer</button>
+      </div>
+
+      <p id="result"></p>
+
+      <div class="hint">
+        <h3>🎯 Bonus Hints:</h3>
+        <ul>
+          <li>
+            Each letter has been shifted the same number of places in the
+            alphabet
+          </li>
+          <li>Z wraps around to A in this magical alphabet dance</li>
+          <li>Try writing out the alphabet and counting spaces!</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
